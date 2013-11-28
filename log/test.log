@@ -627,3 +627,103 @@ Processing by MoviesController#index as HTML
   Rendered movies/index.html.erb within layouts/application (3.1ms)
 Completed 200 OK in 47ms (Views: 35.7ms | ActiveRecord: 0.2ms)
   [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Thu, 28 Nov 2013 15:08:24 UTC +00:00], ["description", "Tony Stark builds an armored suit to fight the throes of evil"], ["rating", "PG-13"], ["released_on", Fri, 02 May 2008], ["title", "Iron Man"], ["total_gross", #<BigDecimal:7fa7c2f8ab80,'0.318412101E9',9(45)>], ["updated_at", Thu, 28 Nov 2013 15:08:24 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/movies/1" for 127.0.0.1 at 2013-11-28 15:08:24 +0000
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Thu, 28 Nov 2013 15:09:20 UTC +00:00], ["description", "Tony Stark builds an armored suit to fight the throes of evil"], ["rating", "PG-13"], ["released_on", Fri, 02 May 2008], ["title", "Iron Man"], ["total_gross", #<BigDecimal:7f9ee6e529c8,'0.318412101E9',9(45)>], ["updated_at", Thu, 28 Nov 2013 15:09:20 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/movies/1" for 127.0.0.1 at 2013-11-28 15:09:20 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 39ms
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Thu, 28 Nov 2013 15:10:20 UTC +00:00], ["description", "Tony Stark builds an armored suit to fight the throes of evil"], ["rating", "PG-13"], ["released_on", Fri, 02 May 2008], ["title", "Iron Man"], ["total_gross", #<BigDecimal:7feb67652ac0,'0.318412101E9',9(45)>], ["updated_at", Thu, 28 Nov 2013 15:10:20 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/movies/1" for 127.0.0.1 at 2013-11-28 15:10:20 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 46ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.9ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "movies" ("created_at", "description", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Thu, 28 Nov 2013 15:10:48 UTC +00:00], ["description", "Tony Stark builds an armored suit to fight the throes of evil"], ["rating", "PG-13"], ["released_on", Fri, 02 May 2008], ["title", "Iron Man"], ["total_gross", #<BigDecimal:7fa926122a60,'0.318412101E9',9(45)>], ["updated_at", Thu, 28 Nov 2013 15:10:48 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/movies/1" for 127.0.0.1 at 2013-11-28 15:10:48 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered movies/show.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 43ms
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "movies" ("created_at", "description", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Thu, 28 Nov 2013 15:11:25 UTC +00:00], ["description", "Tony Stark builds an armored suit to fight the throes of evil"], ["rating", "PG-13"], ["released_on", Fri, 02 May 2008], ["title", "Iron Man"], ["total_gross", #<BigDecimal:7fac93e4ea20,'0.318412101E9',9(45)>], ["updated_at", Thu, 28 Nov 2013 15:11:25 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/movies/1" for 127.0.0.1 at 2013-11-28 15:11:25 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/show.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 46ms
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Thu, 28 Nov 2013 15:13:08 UTC +00:00], ["description", "Tony Stark builds an armored suit to fight the throes of evil"], ["rating", "PG-13"], ["released_on", Fri, 02 May 2008], ["title", "Iron Man"], ["total_gross", #<BigDecimal:7fb62ee52a40,'0.318412101E9',9(45)>], ["updated_at", Thu, 28 Nov 2013 15:13:08 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/movies/1" for 127.0.0.1 at 2013-11-28 15:13:08 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered movies/show.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 46ms
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Thu, 28 Nov 2013 15:15:56 UTC +00:00], ["description", "Tony Stark builds an armored suit to fight the throes of evil"], ["rating", "PG-13"], ["released_on", Fri, 02 May 2008], ["title", "Iron Man"], ["total_gross", #<BigDecimal:7f98f4e4eaa0,'0.318412101E9',9(45)>], ["updated_at", Thu, 28 Nov 2013 15:15:56 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/movies/1" for 127.0.0.1 at 2013-11-28 15:15:56 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered movies/show.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 46ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Thu, 28 Nov 2013 15:18:39 UTC +00:00], ["description", "Tony Stark builds an armored suit to fight the throes of evil"], ["rating", "PG-13"], ["released_on", Fri, 02 May 2008], ["title", "Iron Man"], ["total_gross", #<BigDecimal:7ff1d82a29a8,'0.318412101E9',9(45)>], ["updated_at", Thu, 28 Nov 2013 15:18:39 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/movies/1" for 127.0.0.1 at 2013-11-28 15:18:39 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered movies/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 55ms (Views: 39.1ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
