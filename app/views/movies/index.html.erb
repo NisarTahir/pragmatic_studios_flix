@@ -1,0 +1,11 @@
+<h1><%= pluralize(@movies.size, "Movie") %></h1>
+
+<ul>
+<% @movies.each do |movie| %>
+<%= movie.title %>
+<%= movie.rating %>
+<%= movie.total_gross %>
+<%= movie.description %>
+<%= movie.released_on %>
+<% end %>
+</ul>
